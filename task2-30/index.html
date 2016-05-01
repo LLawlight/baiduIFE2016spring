@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单（二）多个表单项的动态校验</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wraper">
+		<!--名称-->
+		<p class="inputMsg">　　名称　<input id="oName" type="text" /></p>
+		<p id="nameMsg" class="msg">必填，长度为4~16个字符</p>
+		<!--密码-->
+		<p class="inputMsg">　　密码　<input id="pwd" type="password" /></p>
+		<p id="pwdMsg" class="msg">必填，长度为4~16个字符,</p>
+		<!--密码确认-->
+		<p class="inputMsg">密码确认　<input id="pwd2" type="password" /></p>
+		<p id="pwd2Msg" class="msg">再次输入相同的密码</p>
+		<!--邮箱-->
+		<p class="inputMsg">　　邮箱　<input id="mail" type="text" /></p>
+		<p id="mailMsg" class="msg">必填</p>
+		<!--手机-->
+		<p class="inputMsg">　　手机　<input id="phoneNum" type="text" /></p>
+		<p id="phoneNumMsg" class="msg">必填，长度为11个字符</p>
+		<button type="submit">提交</button>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+html,body,div,p,input,button{
+	margin: 0;
+	padding: 0;
+}
+#wraper{
+	width: 1150px;
+	font-family: "宋体";
+	margin-left: 50px;
+}
+.inputMsg{
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+input{
+	width: 960px;
+	height: 60px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-size: 28px;
+	padding: 0 20px;
+}
+button{
+	width: 155px;
+	height: 65px;
+	background-color: #2f79ba;
+	border: 1px solid #2E6AA9;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 992px;
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+}
+.msg{
+	margin-left: 150px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 22px;
+	color: #AAAAAA;
+	display: none;
+}

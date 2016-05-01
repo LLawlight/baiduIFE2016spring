@@ -1,0 +1,38 @@
+html,body,p,input,button{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 800px;
+}
+#name{
+	font-size: 30px;
+	margin: 20px 10px 5px 20px;
+	padding: 0;
+	float: left;
+}
+#inputname{
+	margin-left: 20px;
+	height: 65px;
+	width: 535px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+#verification{
+	margin-top: 20px;
+	display: block;
+	float: left;
+	background-color: #2e78b9;
+	color: white;
+	height: 65px;
+	width: 110px;
+	border: none;
+	border-radius: 5px;
+	font-size: 30px;
+}
+#feedback{
+	clear: left;
+	margin-left: 100px;
+	font-size: 22px;
+	color: grey;
+}

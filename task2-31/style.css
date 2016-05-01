@@ -1,0 +1,47 @@
+div,input,span,select,option{
+	margin: 0;
+	padding: 0;
+}
+#wraper{
+	width: 1040px;
+}
+#choose{
+	font-size: 32px;
+	font-weight: bold;
+}
+#zjs,#company{
+	display: none;
+}
+input{
+	height: 20px;
+	margin-left: 120px;
+}
+#notStudent{
+	margin-left: 300px;
+}
+span{
+	font-size: 28px;
+	font-weight: bold;
+}
+select{
+	font-size: 30px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+#city{
+	width: 345px;
+	padding: 5px;
+}
+#bjs,#zjs{
+	padding: 5px;
+	width: 565px;
+}
+#chooseCompany{
+	width: 905px;
+	padding: 5px;
+	height: 37px;
+	margin-left: 0px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	font-size: 30px;
+}

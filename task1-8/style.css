@@ -1,0 +1,12 @@
+[class *=col-]{
+	padding:10px;
+	height: 70px;
+}
+p{
+	height: 50px;
+	background-color: #eee;
+	border: 1px solid #999;
+}
+.container{
+	width: auto;
+}

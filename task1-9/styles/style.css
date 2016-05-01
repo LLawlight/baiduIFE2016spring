@@ -1,0 +1,690 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: black;
+}
+body{
+	min-width: 1280px;
+}
+header{
+	height: 55px;
+	background-color: #2189bf;
+	position: relative;
+}
+.logo{
+	display: inline-block;
+	position: absolute;
+	left: 50px;
+	top: 10px;
+}
+header input{
+	background-image: url("../imgs/magnifier.jpg");
+	background-repeat: no-repeat;
+	background-position: 10px;
+	border-radius:100px;
+	padding-left: 30px;
+	padding-right: 10px;
+	border: none;
+	height: 28px;
+	display: inline-block;
+	position: absolute;
+	right: 155px;
+	top:14px;
+}
+.login{
+	display: inline-block;
+	position: absolute;
+	right: 94px;
+	text-decoration: none;
+	color: white;
+	font-family: "黑体";
+	font-size: 12px;
+	height: 55px;
+	line-height: 55px;
+}
+.login img{
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+}
+main{
+	width: 1280px;
+	height: 1210px;
+	margin: 0 auto;
+	background-color: #eeedec;
+}
+.sidebar{
+	width: 260px;
+	height: 1210px;
+	background-color: #2a2e3d;
+	overflow: hidden;
+	float: left;
+}
+.sidebar p{
+	cursor: pointer;
+}
+.userinfo1{
+	margin-top:18px;
+	height: 57px;
+}
+.avatar{
+	height: 57px;
+	width: 57px;
+	padding-left: 45px;
+	padding-right: 18px;
+	float: left;
+	cursor: pointer;
+}
+.username{
+	height: 57px;
+	line-height: 57px;
+	font-size: 16px;
+	font-family: "黑体";
+	color: white;
+}
+.userinfo2{
+	margin-top: 24px;
+	height: 51px; 
+	font-family: "黑体";
+	font-size: 12px;
+	color: #6a7c90;
+	text-align: center;
+}
+.collect{
+	width: 25px;
+	margin-left: 62px;
+	padding-right: 30px;
+	border-right: 3px solid #313645;
+	float: left;
+}
+.fans{
+	width: 25px;
+	margin-left: 30px;
+	float: left;
+}
+.report{
+	height: 162px;
+	background-color: #393e4e;
+	padding: 15px 0 15px 45px;
+	font-family: "黑体";
+	font-size: 12px;
+	color: white;
+}
+.report p{
+	margin-bottom: 15px;
+}
+.report .title1 img{
+	margin-right:13px;
+}
+.report .title2{
+	padding-left: 25px;
+}
+.report .title2 img{
+	margin-right: 9px;
+}
+.report .title3{
+	padding-left: 64px;
+}
+.report .title3 img{
+	margin-right: 9px;
+}
+.greyfont{
+	color: #616f83;
+}
+.otherfeatures{
+	padding: 16px 0 0 45px;
+	font-size: 12px;
+	color: #616f83;
+	font-family: "黑体";
+}
+.otherfeatures p{
+	margin-bottom: 35px;
+}
+.otherfeatures img{
+	margin-right: 13px;
+}
+.content{
+	width: 1020px;
+	height: 1210px;
+	float: left;
+}
+.path{
+	font-size: 12px;
+	font-family: "黑体";
+	padding-left: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	color: #b7b7b7;
+}
+.path span{
+	color: #75a0c6;
+}
+.contentmain{
+	width: 890px;
+	height: auto;
+	margin: 20px auto 0;
+}
+.search{
+	height: 85px;
+	border: 1px solid #dddedf;
+	background-color: white;
+	font-size: 12px;
+	font-family: "黑体";
+	color:#b7b7b7;
+	position: relative;
+}
+.query{
+	width: 125px;
+	margin-top: 15px;
+	margin-left: 30px;
+	float: left;
+}
+select{
+	margin-left: 15px;
+	height: 23px;
+	width: 68px;
+	border: 1px solid #dddedf;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("../imgs/selectarrow.jpg");
+	background-repeat: no-repeat;
+	background-position: 51px center;
+}
+.trade{
+	float: left;
+	margin-top: 15px;
+	margin-left: 38px;
+	position: relative;
+}
+.upframe{
+	margin-bottom: 5px;
+}
+.change{
+	display: block;
+	float: left;
+	margin-left: 1px;
+	margin-top: 23px;
+	cursor: pointer;
+}
+.longframe{
+	width: 117px;
+	background-position: 100px;
+}
+.otheroptions{
+	margin-top: 15px;
+	margin-left: 30px;
+	float: left;
+}
+.date{
+	float: left;
+}
+.days{
+	float: left;
+}
+.people{
+	clear: both;
+	float: left;
+}
+.deals{
+	float: left;
+}
+.addmt{
+	margin-left: 15px;
+}
+.dateinput{
+	margin-left: 15px;
+	height: 23px;
+	border: 1px solid #dddedf;
+	width: 115px;
+}
+.searchbutton{
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	background-color: #388ac1;
+	color: white;
+	float: right;
+	position: absolute;
+	right: 110px;
+	top: 30px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.historyprice{
+	height: 65px;
+	margin-top: 10px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.arrow,.timeprice{
+	margin-right: 5px;
+	background-color: white;
+	cursor: pointer;
+}
+.arrow{
+	width: 30px;
+	height: 65px;
+	line-height: 65px;
+	float: left;
+}
+.timeprice{
+	width: 110px;
+	height: 63px;
+	float: left;
+	border-top: 2px solid white;
+}
+.currenttimeprice{
+	border-top: 2px solid #4388c8;
+}
+.timeprice .text1{
+	font-size: 12px;
+	margin-top: 13px;
+}
+.timeprice .text2{
+	color: #ec6500;
+	font-size: 21px;
+}
+.timeprice .text2 span{
+	color: #adadad;
+	font-size: 12px;
+}
+.historydate{
+	background-color: white;
+	float: left;
+	width: 130px;
+	height: 65px;
+	cursor: pointer;
+}
+.historydate img{
+	margin-top: 17px;
+	float: left;
+	margin-left: 18px;
+}
+.historydate p{
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+	font-size: 12px;
+	color: #535353;
+}
+.statistics{
+	height: 90px;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.statistics .title{
+	font-family: "微软雅黑";
+}
+.fourparts{
+	margin-top: 5px;
+	font-family: "黑体";
+}
+.part{
+	height: 70px;
+	width: 196px;
+	background-color: white;
+	overflow: hidden;
+	float: left;
+	margin-right: 30px;
+}
+.greenpart{
+	border-left: 4px solid #43b291;
+}
+.dealsnumber{
+	margin-top: 18px;
+	margin-left: 8px;
+	width: 110px;
+	float: left;
+}
+.part .text2{
+	color: #b7b7b7;
+	margin-top: 10px;
+}
+.colorframe{
+	height: 45px;
+	width: 60px;
+	float: left;
+	margin-top: 12px;
+}
+.greenframe{
+	background-color: #43b291;
+}
+.bluepart{
+	border-left: 4px solid #398bc2;
+}
+.blueframe{
+	background-color: #398bc2;
+}
+.redpart{
+	border-left: 4px solid #d04a36;
+}
+.redframe{
+	background-color: #d04a36;
+}
+.yellowpart{
+	border-left: 4px solid #e2cd46;
+	margin-right: 0;
+}
+.yellowframe{
+	background-color: #e2cd46;
+}
+.project{
+	margin-top: 15px;
+	font-size: 12px;
+}
+.projecttable{
+	width: 530px;
+	height: 355px;
+	border: 2px solid #d0d2d6;
+	border-radius: 10px;
+	background-color: white;
+	position: relative;
+	float: left;
+}
+.projecttable p{
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "黑体";
+	color: #aaaaaa;
+	background-color: #f4f5f7;
+	border-radius: 10px 10px 0 0;
+}
+.projecttable ul{
+	list-style: none;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-family: "微软雅黑";
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.projecttable li{
+	float: left;
+	width: 85px;
+	margin-right: 3px;
+	border: 1px solid #f4f5f7;
+	background-color: #f4f5f7;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+}
+#currentproject{
+	float: left;
+	width: 85px;
+	margin-right: 3px;
+	border: 1px solid #aaaaaa;
+	border-bottom-color: white;
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+	position: absolute;
+	top: 51px;
+}
+.tablewrap{
+	clear: both;
+	margin-left: 20px;
+	border: 1px solid #aaaaaa;
+	height: 250px;
+	width: 490px;
+	border-radius: 0 5px 5px 5px;
+}
+.tablewrap table{
+	margin-top: 28px;
+	margin-left: 36px;
+	border-collapse:collapse;
+}
+.projecttable td{
+	text-align: center;
+	width: 99px;
+	height: 28px;
+	border: 1px solid #aaaaaa;
+	font-family: "宋体";
+}
+.projectsheet{
+	width: 344px;
+	float: left;
+	margin-left: 8px;
+	height: 355px;
+	border: 2px solid #d0d2d6;
+	border-radius: 10px;
+	background-color: white;
+}
+.projectsheet .title{
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "黑体";
+	color: #aaaaaa;
+	background-color: #f4f5f7;
+	border-radius: 10px 10px 0 0;
+}
+.projectsheet .firstline{
+	margin-top: 15px;
+	margin-left: 35px;
+}
+.projectsheet div{
+	padding-left: 15px;
+	font-family: "微软雅黑";
+	color: #cccbcb;
+}
+.projectsheet input{
+	border: none;
+}
+.projectsheet .firstline{
+	width: 265px;
+	height: 40px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.secondlineone{
+	width: 95px;
+	height: 39px;
+	padding-top: 4px;
+	margin-left: 35px;
+	border-right: 1px solid #e7e7e7;
+	float: left;
+}
+.secondlineone input{
+	width: 90px;
+}
+.secondlinetwo{
+	float: left;
+	height: 39px;
+	padding-top: 4px;
+	margin-left: 10px;	
+}
+.describe{
+	clear: both;
+	margin-left: 35px;
+	border-top: 1px solid #e7e7e7;
+	height: 145px;
+}
+textarea{
+	border:none;
+	resize: none;
+	height: 120px;
+	width: 265px;
+}
+#checkdiv{
+	width: 280px;
+	border-top: 1px solid #e7e7e7;
+	margin-left: 35px;
+	padding-left: 0;
+}
+.textleft{
+	margin-top: 10px;
+	width: 100px;
+	float: left;
+}
+.textright{
+	float: right;
+	height: 25px;
+	line-height: 25px;
+	width: 50px;
+	background-color: #388ac1;
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.calendar{
+	width: 344px;
+	float: left;
+	margin-top: 8px;
+	height: 355px;
+	border: 2px solid #d0d2d6;
+	border-radius: 10px;
+	background-color: white;
+}
+.calendar p{
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "黑体";
+	color: #aaaaaa;
+	background-color: #f4f5f7;
+	border-radius: 10px 10px 0 0;
+}
+.choosedate{
+	margin: 10px auto 10px;
+	width: 298px;
+}
+.calendar select{
+	float: left;
+	height: 20px;
+	font-size: "黑体";
+}
+button{
+	height: 20px;
+	margin-left: 6px;
+	background-color: white;
+	border: 1px solid #dddedf;
+}
+.calendar .year{
+	width: 62px;
+	margin-left: 0px;
+}
+.calendar .month{
+	width: 83px;
+	margin-left: 6px;
+}
+.calendar .day{
+	width: 73px;
+	margin-left: 6px;
+	background-position: 60px;
+}
+.calendar table{
+	text-align: center;
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid #a9cfec;
+}
+.calendar th{
+	border-bottom: 1px solid #b7b7b7;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.calendar td{
+	width: 44.5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.calendar span{
+	color: #c9161d;
+}
+.calendar .box{
+	border: 1px solid #F7D563;
+}
+.projecttable{
+	width: 530px;
+	height: 355px;
+	border: 2px solid #d0d2d6;
+	border-radius: 10px;
+	background-color: white;
+	position: relative;
+	float: left;
+}
+.projecttable p{
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "黑体";
+	color: #aaaaaa;
+	background-color: #f4f5f7;
+	border-radius: 10px 10px 0 0;
+}
+.rank{
+	width: 530px;
+	height: 355px;
+	border: 2px solid #d0d2d6;
+	border-radius: 10px;
+	background-color: white;
+	position: relative;
+	float: left;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+.rank table{
+	width: 450px;
+	/*height: 275px;*/
+	margin-top: 18px;
+	margin-left: 40px;
+	text-align: center;
+}
+.rank p{
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	font-family: "黑体";
+	color: #aaaaaa;
+	background-color: #f4f5f7;
+	border-radius: 10px 10px 0 0;
+}
+.rank .box1{
+	background-color: #ec6e52;
+	height: 100%;
+	display: block;
+}
+.rank .box2{
+	background-color: #ef804f;
+	height: 100%;
+	display: block;
+}
+.rank .box3{
+	background-color: #f19e4f;
+	height: 100%;
+	display: block;
+}
+.rank .box4{
+	background-color: #7fcbf0;
+	height: 100%;
+	display: block;
+}
+.rank .basebox{
+	display: inline-block;
+	width: 170px;
+	height: 4px;
+	background-color: #dddddd;
+}
+.rank th{
+	border: 1px solid #cbcbcb;
+	height: 22px;
+}
+.rank td{
+	border: 1px solid #cbcbcb;
+	height: 22px;
+}
+.rankhead .title{
+	text-align: left;
+	text-indent: 60px;
+}
+.hovercss:hover{
+	background-color: #f4f5f6;
+	cursor: pointer;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三十九：UI组件之冻结行列表格</title>
+	<style type="text/css">
+	html,body,table,thead,tr,th,tbody,td,p{
+		margin: 0;padding: 0;
+	}
+	body{
+		position: relative;
+	}
+	table{
+		font-size: 20px;
+		text-align: center;
+		border-collapse: collapse;
+		margin: 0 auto;
+	}
+	th,td{
+		border: 2px solid grey;
+		width: 141px;
+	}
+	th{
+		height: 45px;
+		background-color: #333;
+		color: white;
+	}
+	td{
+		height: 40px;
+	}
+	</style>
+</head>
+<body>
+	<p>滚<br />来<br />滚<br />去</p>
+	<table>
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>语文</th>
+				<th>数学</th>
+				<th>英语</th>
+				<th>总分</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>小明</td>
+				<td>80</td>
+				<td>90</td>
+				<td>70</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小红</td>
+				<td>90</td>
+				<td>60</td>
+				<td>90</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小亮</td>
+				<td>60</td>
+				<td>100</td>
+				<td>70</td>
+				<td>230</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>80</td>
+				<td>90</td>
+				<td>70</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小红</td>
+				<td>90</td>
+				<td>60</td>
+				<td>90</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小亮</td>
+				<td>60</td>
+				<td>100</td>
+				<td>70</td>
+				<td>230</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>80</td>
+				<td>90</td>
+				<td>70</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小红</td>
+				<td>90</td>
+				<td>60</td>
+				<td>90</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小亮</td>
+				<td>60</td>
+				<td>100</td>
+				<td>70</td>
+				<td>230</td>
+			</tr>
+			<tr>
+				<td>小明</td>
+				<td>80</td>
+				<td>90</td>
+				<td>70</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小红</td>
+				<td>90</td>
+				<td>60</td>
+				<td>90</td>
+				<td>240</td>
+			</tr>
+			<tr>
+				<td>小亮</td>
+				<td>60</td>
+				<td>100</td>
+				<td>70</td>
+				<td>230</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去<br />滚<br />来<br />滚<br />去</p>
+	<script type="text/javascript">
+		var table=document.getElementsByTagName('table')[0];
+		var thead=document.getElementsByTagName('thead')[0];
+		var scrollEvent=function(){
+			var scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
+			if (table.offsetTop-scrolltop<=0) {
+				thead.style.position="fixed";
+				thead.style.top=0;
+				if (table.offsetTop+parseInt(getComputedStyle(table).height)-scrolltop<=0) {
+					thead.style.position="absolute";
+				}
+			}else {
+				thead.style.position="static";
+			}
+		}
+		if(document.addEventListener){  
+       	 document.addEventListener("DOMMouseScroll" ,scrollEvent, false);  
+    	}
+		window.onscroll=document.onscroll=scrollEvent;
+	</script>
+</body>
+</html>

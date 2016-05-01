@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三十七：UI组件之浮出层</title>
+	<style type="text/css">
+		html,body,div,button{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		#showPop{
+			background-color: white;
+			border: none;
+			text-decoration: underline;
+			cursor: pointer;
+			font-size: 271px;
+		}
+		.showPop{
+			font-size: 271px;
+		}
+		#popBgc{
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.15);
+			position: fixed;
+			left: 0;
+			top: 0;
+		}
+		#pop{
+			background-color: white;
+			border: 1px solid black;
+			width: 500px;
+			height: 250px;
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			margin-left: -250px;
+			margin-top: -125px;
+		}
+		#popTitle{
+			background-color: #666;
+			cursor: move;
+			height: 50px;
+			line-height: 50px;
+		}
+		#popBtnBox{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		.popBtn{
+			background-color: #666;
+			margin: 10px;
+			border: none;
+			cursor: pointer;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div><button id="showPop" class="showPop">点击弹出浮出层</button></div>
+	<div class="showPop">填充页面</div>
+	<div class="showPop">让页面</div>
+	<div class="showPop">能滚动</div>
+	<script type="text/javascript">
+		var showPop=document.getElementById('showPop');
+		//点击按钮显示浮出层
+		showPop.onclick=function(){
+			//创建透明背景
+			var popBgc=document.createElement('div');
+			popBgc.id="popBgc";
+			popBgc.onclick=function(){
+				document.body.removeChild(pop);
+				document.body.removeChild(popBgc);
+			}
+			document.body.appendChild(popBgc);
+			//创建浮出层
+			var pop=document.createElement('div');
+			pop.id="pop";
+			document.body.appendChild(pop);
+			//创建浮出层标题
+			var popTitle=document.createElement('div');
+			popTitle.id="popTitle";
+			popTitle.innerHTML="这是一个浮出层";
+			//拖拽浮出层
+			popTitle.onmousedown=function(e){
+				e=e||window.event;
+				disX=e.clientX-pop.offsetLeft;
+				disY=e.clientY-pop.offsetTop;
+				document.onmousemove=function(event){
+					event=event||window.event;
+					pop.style.left=event.clientX+250-disX+'px';
+					pop.style.top=event.clientY+125-disY+'px';
+				}
+				document.onmouseup=function(){
+					document.onmousedown=null;
+					document.onmousemove=null;
+				}
+			}
+			pop.appendChild(popTitle);
+			//创建浮出层内容
+			var popContent=document.createElement('div');
+			popContent.id="popContent";
+			popContent.innerHTML="这是一个浮出层";
+			pop.appendChild(popContent);
+			//创建浮出层按钮
+			var popBtnBox=document.createElement('div');
+			popBtnBox.id="popBtnBox";
+			pop.appendChild(popBtnBox);
+			var okBtn=document.createElement('button');
+			okBtn.className="popBtn";
+			okBtn.innerHTML="确定";
+			okBtn.onclick=function(){
+				document.body.removeChild(pop);
+				document.body.removeChild(popBgc);
+			}
+			popBtnBox.appendChild(okBtn);
+			var cancleBtn=document.createElement('button');
+			cancleBtn.className="popBtn";
+			cancleBtn.innerHTML="取消";
+			cancleBtn.onclick=function(){
+				document.body.removeChild(pop);
+				document.body.removeChild(popBgc);
+			}
+			popBtnBox.appendChild(cancleBtn);
+		}
+	</script>
+</body>
+</html>

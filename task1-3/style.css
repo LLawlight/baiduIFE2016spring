@@ -1,0 +1,57 @@
+body,div,h4,h3,p,img{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 20px;
+	min-width: 800px;
+}
+#content{
+	padding: 20px;
+	background-color: #eee;
+	border-color: #999;
+	overflow: hidden;
+}
+#left,#main,#right{
+	float: left;
+}
+#left,#main_inner,#right{
+	background-color: white;
+}
+#left{
+	width: 200px;
+	margin-left: -100%;
+}
+.teamlogo{
+	display: block;
+	float: left;
+	height: 80px;
+	width: 80px;
+	border:1px solid black;
+	margin: 15px;
+}
+h4{
+	float: left;
+	margin-top: 10px;
+}
+#main{
+	width: 100%;
+}
+#main_inner{
+	min-height: 130px;
+	margin: 0 140px 0 220px;
+	padding: 20px;
+	word-break: break-all;
+}
+#right{
+
+	width: 120px;
+	margin-left: -120px;
+}
+#right img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	border:1px solid black;
+	margin:15px auto;
+}
