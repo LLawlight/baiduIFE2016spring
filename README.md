@@ -14,6 +14,7 @@
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-15/" target="_blank">零基础JavaScript编码（三）</a>   
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-16/" target="_blank">零基础JavaScript编码（四）</a>   
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-18/" target="_blank">基础JavaScript练习（一）</a>   
+- <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-22/" target="_blank">JavaScript和树（一）</a>  
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-29/" target="_blank">表单（一）单个表单项的检验</a>   
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-30/" target="_blank">表单（二）多个表单项的动态校验</a>  
 - <a href="http://zhaoyuxiang.cn/baiduIFE2016spring/task2-31/" target="_blank">表单（三）联动</a>  

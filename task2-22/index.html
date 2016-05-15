@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二叉树-Binary Tree</title>
+</head>
+<style type="text/css">
+	div {
+		border: 1px solid black;
+		margin: 10px;
+		background-color: white;
+	}
+	#root {
+		overflow: hidden;
+		width: 948px;
+	}
+	#root div {
+		float: left;
+	}
+	#root>div>div>div {
+		width: 80px;
+		height: 60px;
+	}
+</style>
+<body>
+	<div id="root">
+		<div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<button>前序遍历</button>
+	<button>中序遍历</button>
+	<button>后序遍历</button>
+</body>
+<script type="text/javascript">
+	var treeRoot = document.getElementById('root'),
+		btns = document.getElementsByTagName('button'),
+		timer = null,
+		arr = [];
+	btns[0].onclick = function(){
+		init();
+		preOrder(treeRoot);
+		changeColor();
+	}
+	btns[1].onclick = function(){
+		init();
+		inOrder(treeRoot);
+		changeColor();
+	}
+	btns[2].onclick = function(){
+		init();
+		postOrder(treeRoot);
+		changeColor();
+	}
+	//前序遍历
+	function preOrder(node){
+		if ( !(node == null) ) {
+			arr.push(node);
+			preOrder(node.firstElementChild);
+			preOrder(node.lastElementChild);
+		}
+	}
+	//中序遍历
+	function inOrder(node){
+		if ( !(node == null) ) {
+			inOrder(node.firstElementChild);
+			arr.push(node);
+			inOrder(node.lastElementChild);
+		}
+	}
+	//后序遍历
+	function postOrder(node){
+		if ( !(node == null) ) {
+			postOrder(node.firstElementChild);
+			postOrder(node.lastElementChild);
+			arr.push(node);
+		}
+	}
+	//改变背景色
+	function changeColor(){
+		var i = 1;
+		arr[0].style.backgroundColor = 'blue';
+		timer = setInterval(
+			function(){
+				if (i<arr.length) {
+					arr[i-1].style.backgroundColor = 'white';
+					arr[i].style.backgroundColor = 'blue';
+					i++;
+				}else{
+					clearInterval(timer);
+					arr[i-1].style.backgroundColor = 'white';
+				}
+			}, 500
+		);
+	}
+	//初始化
+	function init(){
+		clearInterval(timer);
+		for (var i = 0; i < arr.length; i++) {
+			arr[i].style.backgroundColor = 'white';
+		}
+		arr = [];
+	}
+</script>
+</html>
